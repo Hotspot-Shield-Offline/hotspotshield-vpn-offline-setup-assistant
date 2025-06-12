@@ -1,0 +1,400 @@
+# 🚫 Hotspot Shield VPN Offline Setup Assistant - .gitignore
+
+# ====================================
+# 🔐 Security & Credentials
+# ====================================
+*.env
+*.env.local
+*.env.production
+*.env.staging
+.env*
+config/secrets.json
+config/credentials.json
+*.key
+*.pem
+*.p12
+*.pfx
+secrets/
+.credentials/
+
+# Internal system files (CRITICAL - NEVER COMMIT)
+.internal/
+*_CREDENTIALS.md
+*_TEMPLATE.md
+*_SETUP.md
+*.prompt.md
+UNIVERSAL_SEO_TOOLKIT.md
+
+# ====================================
+# 💻 Operating Systems
+# ====================================
+
+# macOS
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+.AppleDouble
+.LSOverride
+.DocumentRevisions-V100
+.fseventsd
+.Spotlight-V100
+.TemporaryItems
+.VolumeIcon.icns
+.com.apple.timemachine.donotpresent
+
+# Windows
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+*.cab
+*.msi
+*.msm
+*.msp
+*.lnk
+
+# Linux
+*~
+.fuse_hidden*
+.directory
+.Trash-*
+.nfs*
+
+# ====================================
+# 🛠️ Development Tools
+# ====================================
+
+# Node.js
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.npm
+.yarn-integrity
+.pnp.*
+.yarn/cache
+.yarn/unplugged
+.yarn/build-state.yml
+.yarn/install-state.gz
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+*.manifest
+*.spec
+pip-log.txt
+pip-delete-this-directory.txt
+.tox/
+.coverage
+.pytest_cache/
+
+# Rust
+target/
+Cargo.lock
+**/*.rs.bk
+
+# Go
+# Binaries for programs and plugins
+*.exe
+*.exe~
+*.dll
+*.so
+*.dylib
+bin/
+pkg/
+vendor/
+
+# ====================================
+# 🎨 IDEs & Editors
+# ====================================
+
+# Visual Studio Code
+.vscode/
+*.code-workspace
+
+# IntelliJ IDEA
+.idea/
+*.iws
+*.iml
+*.ipr
+out/
+
+# Sublime Text
+*.tmlanguage.cache
+*.tmPreferences.cache
+*.stTheme.cache
+*.sublime-workspace
+*.sublime-project
+
+# Vim
+[._]*.s[a-v][a-z]
+[._]*.sw[a-p]
+[._]s[a-rt-v][a-z]
+[._]ss[a-gi-z]
+[._]sw[a-p]
+Session.vim
+.netrwhist
+*~
+tags
+[._]*.un~
+
+# Emacs
+*~
+\#*\#
+/.emacs.desktop
+/.emacs.desktop.lock
+*.elc
+auto-save-list
+tramp
+.\#*
+
+# ====================================
+# 📦 Build & Deployment
+# ====================================
+
+# Build outputs
+build/
+dist/
+out/
+target/
+*.tar.gz
+*.zip
+*.rar
+*.7z
+*.dmg
+*.pkg
+*.deb
+*.rpm
+*.AppImage
+
+# Temporary build files
+*.tmp
+*.temp
+*.cache
+.cache/
+tmp/
+temp/
+
+# Log files
+*.log
+logs/
+*.out
+*.err
+
+# Runtime data
+pids/
+*.pid
+*.seed
+*.pid.lock
+
+# ====================================
+# 🌐 Web Development
+# ====================================
+
+# Compiled assets
+*.css.map
+*.js.map
+.sass-cache/
+.less-cache/
+
+# Dependency directories
+bower_components/
+jspm_packages/
+
+# Optional npm cache directory
+.npm
+
+# Optional eslint cache
+.eslintcache
+
+# Microbundle cache
+.rpt2_cache/
+.rts2_cache_cjs/
+.rts2_cache_es/
+.rts2_cache_umd/
+
+# Optional REPL history
+.node_repl_history
+
+# Webpack
+.webpack/
+
+# ====================================
+# 🗄️ Databases
+# ====================================
+*.db
+*.sqlite
+*.sqlite3
+*.db-journal
+
+# ====================================
+# ☁️ Cloud & Services
+# ====================================
+
+# Terraform
+*.tfstate
+*.tfstate.*
+.terraform/
+
+# Docker
+.dockerignore
+docker-compose.override.yml
+
+# AWS
+.aws/
+
+# ====================================
+# 📊 Analytics & Monitoring
+# ====================================
+.nyc_output/
+coverage/
+*.lcov
+
+# ====================================
+# 🔄 Version Control
+# ====================================
+.git/
+.svn/
+.hg/
+
+# ====================================
+# 🎯 Project Specific
+# ====================================
+
+# VPN configuration files (if any test configs)
+*.ovpn
+*.conf
+vpn-configs/
+
+# Mock data (if contains sensitive test data)
+mock-data/sensitive/
+test-credentials/
+
+# Screenshots with potentially sensitive info
+screenshots/private/
+demos/private/
+
+# Temporary UI assets
+ui-temp/
+*.sketch.temp
+*.fig.temp
+
+# User-specific configuration
+user-settings.json
+personal-config.json
+
+# ====================================
+# 📱 Mobile Development
+# ====================================
+
+# React Native
+.expo/
+.expo-shared/
+
+# Android
+*.apk
+*.ap_
+*.dex
+*.class
+gen/
+proguard/
+
+# iOS
+*.ipa
+*.dSYM.zip
+*.dSYM
+DerivedData/
+*.hmap
+*.ipa
+*.xcscmblueprint
+*.xccheckout
+
+# ====================================
+# 🚀 Deployment
+# ====================================
+
+# Netlify
+.netlify/
+
+# Vercel
+.vercel/
+
+# Firebase
+.firebase/
+firebase-debug.log
+
+# ====================================
+# 📝 Documentation Build
+# ====================================
+
+# GitBook
+_book/
+
+# Jekyll
+_site/
+.sass-cache/
+.jekyll-cache/
+.jekyll-metadata
+
+# Sphinx
+_build/
+.doctrees/
+
+# ====================================
+# 🎮 Game Development (if applicable)
+# ====================================
+*.unity
+*.unitypackage
+*.asset
+*.prefab
+
+# ====================================
+# 🧪 Testing
+# ====================================
+test-results/
+coverage/
+.nyc_output/
+junit.xml
+*.spec.js.snap
+
+# ====================================
+# 💾 Backup Files
+# ====================================
+*.backup
+*.bak
+*.old
+*.orig
+*~
+
+# ====================================
+# 🔧 Local Development
+# ====================================
+.local/
+local/
+dev/
+development/
+
+# End of .gitignore 

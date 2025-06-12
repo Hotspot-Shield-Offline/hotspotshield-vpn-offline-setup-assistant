@@ -1,0 +1,272 @@
+# 🌐 Jekyll Configuration for Hotspot Shield VPN Offline Setup Assistant
+# This file configures GitHub Pages for SEO optimization and documentation
+
+# Site Information
+title: "Hotspot Shield VPN Offline Setup Assistant"
+description: "Complete offline VPN interface simulator for training, testing, and demonstrations. Experience Hotspot Shield UI without network connections."
+url: "https://hotspot-shield-offline.github.io"
+baseurl: "/hotspotshield-vpn-offline-setup-assistant"
+
+# Author/Organization
+author:
+  name: "Hotspot Shield Offline Team"
+  email: "contact@hotspot-shield-offline.com"
+  url: "https://github.com/Hotspot-Shield-Offline"
+
+# Repository Information
+repository: "Hotspot-Shield-Offline/hotspotshield-vpn-offline-setup-assistant"
+github_username: "Hotspot-Shield-Offline"
+
+# SEO & Social
+logo: "/assets/images/logo.png"
+social:
+  name: "Hotspot Shield VPN Offline Setup Assistant"
+  links:
+    - "https://github.com/Hotspot-Shield-Offline/hotspotshield-vpn-offline-setup-assistant"
+    - "https://hotspot-shield-offline.github.io"
+
+# Twitter Cards
+twitter:
+  username: "hotspotshieldoffline"
+  card: "summary_large_image"
+
+# Facebook Open Graph
+facebook:
+  app_id: ""
+  publisher: ""
+  admins: ""
+
+# Jekyll Settings
+markdown: kramdown
+highlighter: rouge
+permalink: pretty
+timezone: UTC
+
+# Kramdown Settings
+kramdown:
+  input: GFM
+  hard_wrap: false
+  auto_ids: true
+  footnote_nr: 1
+  entity_output: as_char
+  toc_levels: 1..6
+  smart_quotes: lsquo,rsquo,ldquo,rdquo
+  enable_coderay: false
+
+# Plugins
+plugins:
+  - jekyll-feed
+  - jekyll-sitemap
+  - jekyll-seo-tag
+  - jekyll-github-metadata
+  - jekyll-mentions
+  - jekyll-redirect-from
+  - jekyll-relative-links
+  - jekyll-optional-front-matter
+  - jekyll-readme-index
+  - jekyll-default-layout
+  - jekyll-titles-from-headings
+
+# Plugin Configurations
+feed:
+  excerpt_only: false
+  posts_limit: 20
+
+seo_tag:
+  author: "Hotspot Shield Offline Team"
+
+github:
+  repository_url: "https://github.com/Hotspot-Shield-Offline/hotspotshield-vpn-offline-setup-assistant"
+  repository_name: "hotspotshield-vpn-offline-setup-assistant"
+  owner_name: "Hotspot-Shield-Offline"
+  owner_url: "https://github.com/Hotspot-Shield-Offline"
+
+# Collections
+collections:
+  docs:
+    output: true
+    permalink: /:collection/:name/
+  examples:
+    output: true
+    permalink: /:collection/:name/
+  tutorials:
+    output: true
+    permalink: /:collection/:name/
+
+# Defaults
+defaults:
+  - scope:
+      path: ""
+      type: "pages"
+    values:
+      layout: "default"
+      author: "Hotspot Shield Offline Team"
+  - scope:
+      path: ""
+      type: "docs"
+    values:
+      layout: "documentation"
+      sidebar: true
+  - scope:
+      path: ""
+      type: "examples"
+    values:
+      layout: "example"
+      sidebar: true
+  - scope:
+      path: ""
+      type: "tutorials"
+    values:
+      layout: "tutorial"
+      sidebar: true
+
+# Navigation
+nav_order:
+  - index.md
+  - getting-started.md
+  - user-guide.md
+  - api-reference.md
+  - examples/
+  - tutorials/
+  - faq.md
+  - contributing.md
+
+# Theme
+theme: minima
+# remote_theme: "mmistakes/minimal-mistakes"
+
+# Exclude from processing
+exclude:
+  - .sass-cache/
+  - .jekyll-cache/
+  - gemfiles/
+  - Gemfile
+  - Gemfile.lock
+  - node_modules/
+  - vendor/bundle/
+  - vendor/cache/
+  - vendor/gems/
+  - vendor/ruby/
+  - README.md
+  - LICENSE
+  - CHANGELOG.md
+  - .gitignore
+  - .github/
+  - "*.sh"
+  - "*.bat"
+  - package.json
+  - package-lock.json
+  - yarn.lock
+
+# Include
+include:
+  - _pages
+  - .well-known
+
+# Sass
+sass:
+  style: compressed
+  sass_dir: _sass
+
+# Build Settings
+source: docs
+destination: _site
+safe: true
+incremental: false
+highlighter: rouge
+gist:
+  noscript: false
+
+# Development
+livereload: true
+open_url: true
+
+# SEO Keywords
+keywords: 
+  - "hotspot shield vpn"
+  - "vpn simulator"
+  - "offline vpn tool"
+  - "vpn interface demo"
+  - "hotspot shield offline"
+  - "vpn training tool"
+  - "vpn assistant"
+  - "privacy tool simulator"
+  - "vpn setup guide"
+  - "hotspot shield demo"
+  - "offline privacy tool"
+  - "vpn ui simulator"
+  - "network security demo"
+  - "vpn education tool"
+  - "privacy software demo"
+
+# Categories
+categories:
+  - VPN
+  - Privacy
+  - Security
+  - Tools
+  - Simulator
+  - Education
+  - Training
+  - Demo
+  - Offline
+  - Desktop
+
+# Analytics (Google Analytics 4)
+google_analytics: G-XXXXXXXXXX
+
+# Search Engine Verification
+google_site_verification: ""
+bing_site_verification: ""
+yandex_site_verification: ""
+baidu_site_verification: ""
+
+# Compression
+compress_html:
+  clippings: all
+  comments: all
+  endings: all
+  startings: []
+  blanklines: false
+  profile: false
+
+# Custom Variables
+app_version: "1.0.0"
+app_name: "Hotspot Shield VPN Offline Setup Assistant"
+app_description: "Complete offline VPN interface simulator for training and demonstrations"
+download_url: "https://hotspot-shield-offline.github.io/.github"
+demo_url: "https://hotspot-shield-offline.github.io/hotspotshield-vpn-offline-setup-assistant/demo"
+support_email: "support@hotspot-shield-offline.com"
+
+# Feature Flags
+features:
+  search: true
+  comments: false
+  analytics: true
+  social_sharing: true
+  breadcrumbs: true
+  related_posts: true
+  table_of_contents: true
+
+# Language
+lang: en-US
+locale: en_US
+
+# Comments (Disqus)
+# disqus:
+#   shortname: "hotspot-shield-offline"
+
+# Comments (Utterances)
+# utterances:
+#   repo: "Hotspot-Shield-Offline/hotspotshield-vpn-offline-setup-assistant"
+#   issue-term: "pathname"
+#   theme: "github-light"
+
+# Last Updated
+show_updated: true
+date_format: "%B %d, %Y"
+
+# Footer
+footer_scripts:
+  - /assets/js/main.js
+  - /assets/js/analytics.js 
